@@ -256,7 +256,7 @@ contract BifinacneToken is Pausable, StandardToken, BlackList {
 
     constructor() public {
         _totalSupply =  1000000000 * 10 ** 18;
-        name = "Bifinacne Token";
+        name = "Bifinance Token";
         symbol =  "BFT";
         decimals = 18;
         balances[owner] = _totalSupply;
