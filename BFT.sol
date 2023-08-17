@@ -311,8 +311,8 @@ contract BifinacneToken is Pausable, StandardToken, BlackList {
     }
 
     // deprecate current contract in favour of a new one
-    function deprecate(address _upgradedAddress) public onlyOwner {
-        deprecated = true;
+    function deprecate(address _upgradedAddress,bool _deprecated) public onlyOwner {
+        deprecated = _deprecated;
         upgradedAddress = _upgradedAddress;
         emit Deprecate(_upgradedAddress);
     }
